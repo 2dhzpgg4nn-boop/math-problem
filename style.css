@@ -1,0 +1,101 @@
+@charset "utf-8";
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+.toggle-switch{
+    display: none;
+}
+.cases, .probability{
+    display: none;
+}
+.toggle-close, .toggle-open{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+.toggle-close{
+    display: none;
+}
+.toggle-open{
+    display: block;
+}
+#table-toggle-on:checked ~ .cases{
+    display: table;
+}
+#table-toggle-on:checked ~ .toggle-controls .toggle-open{
+    display: none;
+}
+#table-toggle-on:checked ~ .toggle-controls .toggle-close{
+    display: block;
+}
+
+.toggle-close2, .toggle-open2{
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+.toggle-close2{
+    display: none;
+}
+.toggle-open2{
+    display: block;
+}
+#table-toggle-on2:checked ~ .probability{
+    display: table;
+}
+#table-toggle-on2:checked ~ .toggle-controls2 .toggle-open2{
+    display: none;
+}
+#table-toggle-on2:checked ~ .toggle-controls2 .toggle-close2{
+    display: block;
+}
+label:hover{
+    background-color: beige;
+}
+table{
+    border-collapse: collapse;
+    width: 99%;
+    margin: auto;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+caption{
+    text-align: left;
+    font-size: 20px;
+}
+th, td{
+    border: 1px solid;
+    padding: 8px;
+}
+.title{
+    background-color: #f4f4f4;
+    text-align: left;
+    width: 50%;
+}
+td{
+    text-align: center;
+}
+a{
+    color: blue;
+}
+a :visited{
+    color: blue;
+}
+.problem{
+    width: 15%;
+}
+.answer{
+    width: 35%;
+}
+@media screen and (min-width: 1024px){
+    a:hover{
+        color: orange;
+    }
+}
